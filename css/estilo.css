@@ -1,0 +1,109 @@
+/*	GLOBAL
+___________________________________________________ */
+
+* {
+	border: 0;
+	padding: 0;
+}
+
+body {
+	/*background: #222;*/
+	/*background: #fff;*/
+	background-color: black;
+	font-family: Arial;
+}
+
+/*	HEADER
+___________________________________________________ */
+
+#header {
+	min-width: 320px;
+	background: #ffc301;
+	/*background: #dfb813;*/
+}
+
+#header-linha1 {
+	position: relative;
+}
+
+#menu {
+	min-width: 46px;
+	height: 40px;
+	background-color: black;
+	float: left;
+	text-indent: -9999px;
+}
+
+#logo {
+	min-width: 85px;
+	height: 40px;
+	background: black url("../img/logo.png") no-repeat center;
+	background-size: 160%;
+	float: left;	
+}
+
+#busca {
+	width: 100%;
+	height: 40px;
+	/*background: orange;*/
+	clear:both;
+}
+
+#busca input {
+	height: 100%;
+	width: 100%;
+	background: white;
+	border: 0.1px solid lightgray;
+	/*border-radius: 7px 0px 0px 7px;*/
+	padding: 0 13px;
+	box-sizing: border-box;
+	color: gray;
+}
+
+/*#busca button {
+	border-radius: 0px 7px 7px 0px;
+	margin-top: 7px;
+	height: 30px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	float: left;
+}*/
+
+#carrinho {
+	min-width: 46px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#header-linha2 {
+	height: 45px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 45px;
+
+}
+
+.clear	{
+	clear: both;
+}
+
+/*	RESPONSIVIDADE
+___________________________________________________ */
+
+@media (min-width: 480px) {
+
+	#busca {
+		width: 61%;
+		float: left;
+		clear: none;
+	}
+
+#busca input {
+	margin-left: 10px;
+}
+
+
+}
