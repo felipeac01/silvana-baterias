@@ -7,9 +7,7 @@ ___________________________________________________ */
 }
 
 body {
-	/*background: #222;*/
-	/*background: #fff;*/
-	background-color: black;
+	background: #222;
 	font-family: Arial;
 }
 
@@ -19,75 +17,98 @@ ___________________________________________________ */
 #header {
 	min-width: 320px;
 	background: #ffc301;
-	/*background: #dfb813;*/
 }
 
 #header-linha1 {
-	position: relative;
+	display: flex;
+	/*background-color: orange;*/
+	height: 50px;
+	
+}
+
+.fluidWrapper {
+	display: flex;
+	width: 100%;
+	/*background-color: green;*/
 }
 
 #menu {
-	min-width: 46px;
-	height: 40px;
+	width: 50px;
+	height: 100%;
+	flex-grow: 0;
 	background-color: black;
-	float: left;
-	text-indent: -9999px;
+
+	background: black url("../img/menu.svg") no-repeat center;
+	background-size: 45%;
 }
 
 #logo {
-	min-width: 85px;
-	height: 40px;
+	width: 100px;
+	height: 100%;
+	flex-grow: 0;
 	background: black url("../img/logo.png") no-repeat center;
-	background-size: 160%;
-	float: left;	
+	background-size: 150%;
 }
 
 #busca {
-	width: 100%;
-	height: 40px;
+	position: relative;
+	display: none;
+	width: 50px;
+	height: 100%;
+	flex-grow: 1;
 	/*background: orange;*/
-	clear:both;
 }
 
-#busca input {
-	height: 100%;
+#busca input, #header-linha2 input {
 	width: 100%;
+	height: 100%;
 	background: white;
 	border: 0.1px solid lightgray;
-	/*border-radius: 7px 0px 0px 7px;*/
-	padding: 0 13px;
+	padding: 0 60px 0 13px;
 	box-sizing: border-box;
 	color: gray;
 }
 
-/*#busca button {
-	border-radius: 0px 7px 7px 0px;
-	margin-top: 7px;
-	height: 30px;
-	padding: 0 10px;
-	box-sizing: border-box;
-	float: left;
-}*/
+#busca button,  #header-linha2 button {
+	width: 50px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	background: lightgray url("../img/magnifying-glass.svg") no-repeat center;
+	background-size: 40%;
+}
+
+#login {
+	height: 100%;
+	flex-grow: 1;
+	/*background: purple;*/
+	background: url("../img/user.svg") no-repeat center 6px;
+	background-size: 20px 20px;
+	line-height: 75px;
+	text-align: center;
+}
 
 #carrinho {
-	min-width: 46px;
-	height: 40px;
-	background: blue;
-	position: absolute;
-	top: 0;
-	right: 0;
+	width: 50px;
+	height: 100%;
+	flex-grow: 0;
+	background: url("../img/shopping-cart.svg") no-repeat center;
+	background-size: 50%;
+	line-height: 75px;
+	text-align: center;
 }
 
 #header-linha2 {
-	height: 45px;
-	text-align: center;
-	font-size: 14px;
-	line-height: 45px;
-
+	height: 40px;
+	position: relative;
 }
 
-.clear	{
-	clear: both;
+#header-linha3 {
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+
+	font-size: 14px
 }
 
 /*	RESPONSIVIDADE
@@ -96,14 +117,15 @@ ___________________________________________________ */
 @media (min-width: 480px) {
 
 	#busca {
-		width: 61%;
-		float: left;
-		clear: none;
+		display: block;
 	}
 
-#busca input {
-	margin-left: 10px;
-}
+	#login {
+	max-width: 100px;
+	}
 
+	#header-linha2 {
+	display: none;
+	}
 
 }

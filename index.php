@@ -12,16 +12,25 @@
 <body>
 	<header id="header">
 		<div id="header-linha1">
-			<nav id="menu"></nav>
-			<div id="logo"></div>
-			<div id="busca">
-				<input type="text" placeholder="Pesquisar...">
+			<div class="fluidWrapper">
+				<nav id="menu"></nav>
+				<div id="logo"></div>
+				<div id="busca">
+					<input type="text" placeholder="Pesquisar...">
+					<button></button>
+				</div>
+				<div id="login">
+					Minha conta
+				</div>
+				<div id="carrinho"></div>
 			</div>
-			<div id="carrinho"></div>
-			<div class="clear"></div>
 		</div>
 		<div id="header-linha2">
-			ITEM 1 | ITEM 2 | ETC
+			<input type="text" placeholder="Pesquisar...">
+			<button></button>
+		</div>
+		<div id="header-linha3">
+			MAIS VENDIDAS | ATENDIMENTO
 		</div>
 	</header>
 	<main>
